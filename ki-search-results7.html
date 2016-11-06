@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Results Only Layout</title>
- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js' type='text/javascript'></script>
+ 
 <!-- Put the following javascript before the closing </head> tag. -->
 <script>
   (function() {
@@ -15,12 +15,7 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-  <script>
-  $("#btn").click( function() {
-    var url = "https://cdn.rawgit.com/kangismet/ki-html/master/ki-search-results6.html?q=" + $("#text").val();
-    window.open(url);
-});
-  </script>
+
   <style>
 body {
   background:#2f3135;
@@ -28,7 +23,7 @@ body {
   padding:0;
     }
   </style>
- 
+ <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js' type='text/javascript'></script>
 </head>
 
 <body>
@@ -37,6 +32,13 @@ body {
 
 <!-- Place this tag where you want the search results to render -->
 <gcse:searchresults-only></gcse:searchresults-only>
+ 
+   <script>
+  $("#btn").click( function() {
+    var url = "https://cdn.rawgit.com/kangismet/ki-html/master/ki-search-results7.html?q=" + $("#text").val();
+    window.open(url);
+});
+  </script>
 </body>
 
 </html>
