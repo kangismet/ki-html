@@ -15,6 +15,12 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
+  <script>
+  $("#btn").click( function() {
+    var url = "https://cdn.rawgit.com/kangismet/ki-html/master/ki-search-results4.html?q=" + $("#text").val();
+    window.open(url);
+});
+  </script>
   <style>
 body {
   background:#2f3135;
@@ -27,12 +33,7 @@ body {
 <body>
 <input type="text" id="text" />
 <input type="button" id="btn" value="Submit" />
-<script>
-  $("#btn").click( function() {
-    var url = "https://cdn.rawgit.com/kangismet/ki-html/master/ki-search-results3.html?q=" + $("#text").val();
-    window.open(url);
-});
-  </script>
+
 <!-- Place this tag where you want the search results to render -->
 <gcse:searchresults-only></gcse:searchresults-only>
 </body>
