@@ -129,7 +129,7 @@
 }
 </style>
 
-			<iframe name="iframe_uexxnchh" id="iframe_uexxnchh" onload="if(typeof sent_uexxnchh!='undefined'){window.location.reload='https://www.assaef.web.id/p/contact.html#openModal';}"></iframe>
+			<iframe name="iframe_uexxnchh" id="iframe_uexxnchh" onload="if(typeof sent_uexxnchh!='undefined'){window.location='https://www.assaef.web.id/p/contact.html#openModal';}"></iframe>
 			<form action="https://docs.google.com/forms/d/1FhLjVcsRXB4nF5wAkY8IZrNkvTpIPl9G57Mbnh36gZE/formResponse" method="POST" id="ss-form" target="iframe_uexxnchh" onsubmit="sent_uexxnchh=true">
 					<div class="styled-input">
                         <div class="styled-input-in">
@@ -155,6 +155,14 @@
 					<input name="draftResponse" type="hidden" value="[,,&quot;3126798840251277356&quot;]">
                     <input name="pageHistory" type="hidden" value="0">
                     <input name="fbzx" type="hidden" value="3126798840251277356">
-					<button type="submit" name="submit" class="btn btn-default">Kirim</button>
+					<button type="submit" name="submit" class="btn btn-default" onclick="refresh()">Kirim</button>
 					</div>
 			</form>
+<script>
+	function refresh() {
+
+    setTimeout(function () {
+        location.reload()
+    }, 100);
+}
+</script>
