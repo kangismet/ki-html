@@ -160,8 +160,10 @@
 			</form>
 
 <script>
-	function opennewtab(url )
-{
-  var win=window.open(url, '_blank');
+function opennewtabb(url) {
+    var a = document.createElement("a");
+    a.target = "_blank";
+    a.href = url;
+    a.click();
 }
-	</script>
+</script>
