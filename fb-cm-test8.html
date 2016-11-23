@@ -3,9 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Coba</title>
-<style>
-  .fb-comments{min-height:200px}
-</style>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -33,5 +30,12 @@ var url = getQueryVariable("url");
 <script>
 document.write('<div class="fb-comments" data-href="'+ url+'" data-width="600" data-numposts="10"></div>');
 </script>
+  <script>
+    window.parent.postMessage({
+  sentinel: 'amp',
+  type: 'embed-size',
+  height: document.body.scrollHeight
+}, '*');
+  </script>
 </body>
 </html>
