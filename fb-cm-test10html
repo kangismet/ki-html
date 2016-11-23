@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Coba</title>
   <style>
-    .top-box {background:green;width:600px;height:200px}
+    #fb-root{display:inline-block;min-height:200px}
   </style>
 </head>
 <body>
@@ -30,7 +30,6 @@ function getQueryVariable(variable) {
 }
 var url = getQueryVariable("url");
 </script>
-  <div class='top-box'/>
 <script>
 document.write('<div class="fb-comments" data-href="'+ url+'" data-width="600" data-numposts="10"></div>');
 </script>
