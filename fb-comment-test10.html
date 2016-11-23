@@ -8,6 +8,28 @@
   </style>
 </head>
 <body>
+  <script>
+window.addEventListener('message', receiveMessage, false);
+function receiveMessage(event) {
+	if (event.data) {
+		var msg;
+		try {
+			msg = JSON.parse(event.data);
+		} catch (err) {
+			// Do nothing
+		}
+		if (!msg)
+			return false;
+		if (msg.name === 'resize') {
+			window.parent.postMessage({
+			  sentinel: 'amp',
+			  type: 'embed-size',
+			  height: msg.data.height
+			}, '*');
+		}
+	}
+}
+</script>
 <script>
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
@@ -23,12 +45,5 @@ var url = getQueryVariable("url");
 <script>
 document.write('<iframe src="https://www.facebook.com/plugins/feedback.php?href='+ url+'" style="position: absolute; height: 100%;width:100%;border: none"></iframe>');
 </script>
-  <script>
-    window.parent.postMessage({
-  sentinel: 'amp',
-  type: 'embed-size',
-  height: document.body.scrollHeight
-}, '*');
-  </script>
 </body>
 </html>
