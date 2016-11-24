@@ -4,12 +4,11 @@
 </style>
 <div id='fb-root'></div>
 <script>
-var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-var eventer = window[eventMethod];
-var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-eventer(messageEvent,function(e) {
-  if (e.data.substring(0,3)=='frm') document.getElementById('fbframe').style.height = e.data.substring(3) + 'px';
-},false);
+window.parent.postMessage({
+  sentinel: 'amp',
+  type: 'embed-size',
+  height: document.body.scrollHeight
+}, '*');
 </script>
 <script>
 var urls = getQueryVariable("url");
