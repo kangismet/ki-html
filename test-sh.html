@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://andrewsun.com/xmlrpc.php">
+<!--[if lt IE 9]>
+	<script src="https://andrewsun.com/wp-content/themes/asun2k15/js/html5.js"></script>
+	<![endif]-->
+<link rel="dns-prefetch" href="//fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+<script>(function(html){html.className=html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
+<title>Syntax Highlighter &ndash; Andrew Sun</title>
+<link rel="canonical" href="https://andrewsun.com/tools/syntax-highlighter/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Syntax Highlighter &ndash; Andrew Sun"/>
+<meta property="og:description" content="This syntax highlighter Web application highlights your code to make it easier to read. It outputs HTML that you can paste into your own Web pages, and can optionally inline the CSS. You can also copy and paste the preview into a word processing application. This application requires JavaScript. Please enable JavaScript to use the &hellip; Continue reading Syntax Highlighter"/>
+<meta property="og:url" content="https://andrewsun.com/tools/syntax-highlighter/"/>
+<meta property="og:site_name" content="Andrew Sun"/>
+<meta property="article:modified_time" content="2018-12-20T20:26:05+00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="1 minute">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://andrewsun.com/#website","url":"https://andrewsun.com/","name":"Andrew Sun","description":"Insert clever tagline here.","potentialAction":[{"@type":"SearchAction","target":"https://andrewsun.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://andrewsun.com/tools/syntax-highlighter/#webpage","url":"https://andrewsun.com/tools/syntax-highlighter/","name":"Syntax Highlighter &ndash; Andrew Sun","isPartOf":{"@id":"https://andrewsun.com/#website"},"datePublished":"2016-04-18T20:02:09+00:00","dateModified":"2018-12-20T20:26:05+00:00","breadcrumb":{"@id":"https://andrewsun.com/tools/syntax-highlighter/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://andrewsun.com/tools/syntax-highlighter/"]}]},{"@type":"BreadcrumbList","@id":"https://andrewsun.com/tools/syntax-highlighter/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://andrewsun.com/","url":"https://andrewsun.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://andrewsun.com/tools/","url":"https://andrewsun.com/tools/","name":"Tools"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://andrewsun.com/tools/syntax-highlighter/","url":"https://andrewsun.com/tools/syntax-highlighter/","name":"Syntax Highlighter"}}]}]}</script>
+<link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net'/>
+<link rel='dns-prefetch' href='//s.w.org'/>
+<link rel="alternate" type="application/rss+xml" title="Andrew Sun &raquo; Feed" href="https://andrewsun.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Andrew Sun &raquo; Comments Feed" href="https://andrewsun.com/comments/feed/"/>
+<script>window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/cdn.jsdelivr.net\/gh\/wordpress\/wordpress@5.7\/wp-includes\/js\/wp-emoji-release.min.js"}};!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+<style>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/css/dist/block-library/style.min.css' integrity='sha384-PI6vFUPHkBzkuTPv+mALxYWOPehU+U7b2NzpEBS+UyIhKDJbvK03VFhe3SAhn8Yb' crossorigin='anonymous' type='text/css' media='all'/>
+<style id='wp-block-library-inline-css'>.has-text-align-justify{text-align:justify}</style>
+<link rel='stylesheet' id='modern_footnotes-css' href='https://cdn.jsdelivr.net/wp/plugins/modern-footnotes/tags/1.4.1/styles.min.css' integrity='sha384-jU53v5ChmZFJfPBsf1UDMuLVOheP/dwftst0CaEFnJtV1/dBV4F6NeiGOvHKeTkb' crossorigin='anonymous' type='text/css' media='all'/>
+<link rel='stylesheet' id='contact-form-7-css' href='https://cdn.jsdelivr.net/wp/plugins/contact-form-7/tags/5.4/includes/css/styles.css' integrity='sha384-4RQTxmXR6cS4rQNNmwtLH2J+Fns2boTuNY7tTZoOgEEgx83pcR2dVGhwPVw4k1NK' crossorigin='anonymous' type='text/css' media='all'/>
+<style id='google-fonts-css' media='all'>/* greek-ext */
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpxgwjKBV1pqhv97I8x3F5O.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpxgwjKBV1pqhv97IAx3F5O.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpxgwjKBV1pqhv97I0x3F5O.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpxgwjKBV1pqhv97IMx3A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlp_gwjKBV1pqhv03IEp2A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlp_gwjKBV1pqhv73IEp2A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlp_gwjKBV1pqhv23IEp2A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlp_gwjKBV1pqhv43IE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpygwjKBV1pqhND-ZQa-WN3aQ.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpygwjKBV1pqhND-ZQV-WN3aQ.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpygwjKBV1pqhND-ZQY-WN3aQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/cardo/v13/wlpygwjKBV1pqhND-ZQW-WM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v21/QlddNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLyxq15Mjs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v21/QlddNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLyx615Mjs.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v21/QlddNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLyya15.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v21/QlddNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLyxq15Mjs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v21/QlddNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLyx615Mjs.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/inconsolata/v21/QlddNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLyya15.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<link rel='stylesheet' id='genericons-css' href='https://cdn.jsdelivr.net/genericons/3.4.1/genericons/genericons.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='twentyfifteen-style-css' href='https://cdn.asun.co/andrewsun.com/wp-content/themes/asun2k15/A.style.css,qver=20170208.pagespeed.cf.ZtH0UtJaZW.css' type='text/css' media='all'/>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://andrewsun.com/wp-content/themes/asun2k15/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://andrewsun.com/wp-content/themes/asun2k15/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js' integrity='sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2' crossorigin='anonymous' id='jquery-core-js'></script>
+<script id='jquery-core-js-after'>try{jQuery.noConflict();}catch(e){};</script>
+<script src='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/jquery/jquery-migrate.min.js' integrity='sha384-Pm1fyRwPgIbpBpjdSYtcKzBv+Z/nHekZIGmhoVSBTSJ+cynSJChqUaVhkQZvb7FV' crossorigin='anonymous' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://andrewsun.com/wp-json/"/><link rel="alternate" type="application/json" href="https://andrewsun.com/wp-json/wp/v2/pages/294"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://andrewsun.com/xmlrpc.php?rsd"/>
+<meta name="generator" content="Definitely not WordPress"/>
+<link rel='shortlink' href='http://asun.co/9wn-e'/>
+<link href="http://asun.co/9wn-e" rel="shortlink">
+<link rel="icon" href="https://cdn.asun.co/andrewsun.com/wp-content/uploads/2015/11/xcropped-ascom-ng-favicon-32x32.png.pagespeed.ic.E3DCU_fZmA.webp" sizes="32x32"/>
+<link rel="icon" href="https://cdn.asun.co/andrewsun.com/wp-content/uploads/2015/11/xcropped-ascom-ng-favicon-192x192.png.pagespeed.ic.watkpvjFfQ.webp" sizes="192x192"/>
+<link rel="apple-touch-icon" href="https://cdn.asun.co/andrewsun.com/wp-content/uploads/2015/11/xcropped-ascom-ng-favicon-180x180.png.pagespeed.ic.n_1djfzgmx.webp"/>
+<meta name="msapplication-TileImage" content="https://andrewsun.com/wp-content/uploads/2015/11/cropped-ascom-ng-favicon-270x270.png"/>
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com"></head>
+<body class="page-template-default page page-id-294 page-child parent-pageid-288"><noscript><meta HTTP-EQUIV="refresh" content="0;url='https://andrewsun.com/tools/syntax-highlighter/?PageSpeed=noscript'" /><style><!--table,div,span,font,p{display:none} --></style><div style="display:block">Please click <a href="https://andrewsun.com/tools/syntax-highlighter/?PageSpeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+<script>if(sessionStorage.fontsLoaded){document.body.className+=" cardo cardo-i cardo-b";}</script>
+<div id="page" class="hfeed site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div id="sidebar" class="sidebar">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-branding">
+<p class="site-title"><a href="/" rel="home">Andrew Sun</a></p>
+<p class="site-description">Insert clever tagline here.</p>
+<button class="secondary-toggle">Menu and widgets</button>
+</div>
+</header>
+<div id="secondary" class="secondary">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<div class="menu-nested-pages-4-container"><ul id="menu-nested-pages-4" class="nav-menu"><li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1000"><a href="/">Home</a></li>
+<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="/blog/">Blog</a></li>
+<li id="menu-item-1003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1003"><a href="/projects/">Projects</a>
+<ul class="sub-menu">
+<li id="menu-item-1004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1004"><a href="/projects/wp-katex/">WP-KaTeX</a></li>
+<li id="menu-item-1005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1005"><a href="/projects/classcompare/">ClassCompare</a></li>
+<li id="menu-item-1006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1006"><a href="/projects/mozjpeg-js/">mozjpeg.js</a></li>
+<li id="menu-item-1007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1007"><a href="/projects/woffjs/">WOFFjs</a></li>
+</ul>
+</li>
+<li id="menu-item-1008" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1008"><a href="/tools/">Tools</a>
+<ul class="sub-menu">
+<li id="menu-item-1009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1009"><a href="/tools/woffer-woff-font-converter/">WOFFer</a></li>
+<li id="menu-item-1010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1010"><a href="/tools/javascript-minifier/">Online JavaScript Minifier</a></li>
+<li id="menu-item-1011" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-294 current_page_item menu-item-1011"><a href="/tools/syntax-highlighter/" aria-current="page">Syntax Highlighter</a></li>
+</ul>
+</li>
+<li id="menu-item-1037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1037"><a href="/about/">About</a></li>
+<li id="menu-item-1012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1012"><a href="/contact/">Contact</a></li>
+<li id="menu-item-1013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1013"><a href="/donate/">Donate</a></li>
+</ul></div>	</nav>
+<nav id="social-navigation" class="social-navigation" role="navigation">
+<div class="menu-social-container"><ul id="menu-social" class="menu"><li id="menu-item-48" class="rss-link-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="/feed/"><span class="screen-reader-text">RSS</span></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://github.com/as-com"><span class="screen-reader-text">GitHub</span></a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a href="https://twitter.com/ascom99"><span class="screen-reader-text">Twitter</span></a></li>
+</ul></div>	</nav>
+<div id="widget-area" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" class="search-form" action="/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s"/>
+</label>
+<input type="submit" class="search-submit screen-reader-text" value="Search"/>
+</form></aside><aside id="text-3" class="widget widget_text aunit-wrap-sidebar"><h2 class="widget-title">Advertisement</h2>	<div class="textwidget"><ins class="adsbygoogle aunit " style="display:block;background-color:transparent;height:600px" data-ad-client="ca-pub-0765761379096558" data-ad-slot="9941753730" data-ad-format="vertical"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+</aside><aside id="nav_menu-4" class="widget widget_nav_menu"><div class="menu-policies-container"><ul id="menu-policies" class="menu"><li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129"><a href="/spam-policy/">Spam Policy</a></li>
+</ul></div></aside>	</div>
+</div>
+</div>
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-294" class="post-294 page type-page status-publish hentry">
+<header class="entry-header">
+<h1 class="entry-title">Syntax Highlighter</h1>	</header>
+<div class="entry-content">
+<p>This syntax highlighter Web application highlights your code to make it easier to read. It outputs HTML that you can paste into your own Web pages, and can optionally inline the CSS. You can also copy and paste the preview into a word processing application.</p>
+<div id="app"><noscript>This application requires JavaScript. Please enable JavaScript to use the syntax highlighter.</noscript></div>
+<h2>Supported Languages</h2>
+<ul>
+<li>1C</li>
+<li>ABNF</li>
+<li>Access logs</li>
+<li>Ada</li>
+<li>ActionScript</li>
+<li>Apache</li>
+<li>AppleScript</li>
+<li>ARM assembler</li>
+<li>AsciiDoc</li>
+<li>AspectJ</li>
+<li>AutoHotkey</li>
+<li>AutoIt</li>
+<li>AVR assembler</li>
+<li>Awk</li>
+<li>Axapta</li>
+<li>Bash</li>
+<li>Basic</li>
+<li>Brainfuck</li>
+<li>BNF</li>
+<li>C#</li>
+<li>C++</li>
+<li>C/AL</li>
+<li>Cache Object Script</li>
+<li>Cap’n Proto</li>
+<li>Clean</li>
+<li>Clojure</li>
+<li>CMake</li>
+<li>CoffeeScript</li>
+<li>Coq</li>
+<li>Crmsh</li>
+<li>Crystal</li>
+<li>CSP</li>
+<li>CSS</li>
+<li>D</li>
+<li>Dart</li>
+<li>Delphi</li>
+<li>Diff</li>
+<li>Django</li>
+<li>DNS Zone file</li>
+<li>Dockerfile</li>
+<li>DOS</li>
+<li>dsconfig</li>
+<li>DTS (Device Tree)</li>
+<li>Dust</li>
+<li>EBNF</li>
+<li>Elixir</li>
+<li>Elm</li>
+<li>Erlang</li>
+<li>Excel</li>
+<li>F#</li>
+<li>FIX</li>
+<li>Flix</li>
+<li>Fortran</li>
+<li>G-Code</li>
+<li>Gams</li>
+<li>GAUSS</li>
+<li>Gherkin</li>
+<li>Go</li>
+<li>Golo</li>
+<li>Gradle</li>
+<li>Groovy</li>
+<li>Haml</li>
+<li>Handlebars</li>
+<li>Haskell</li>
+<li>Haxe</li>
+<li>HTTP</li>
+<li>HTML, XML</li>
+<li>Ini</li>
+<li>Inform7</li>
+<li>IRPF90</li>
+<li>Java</li>
+<li>JavaScript</li>
+<li>JSON</li>
+<li>Lasso</li>
+<li>LDIF</li>
+<li>Less</li>
+<li>Linden Scripting Language</li>
+<li>Lisp</li>
+<li>LLVM</li>
+<li>LiveCode Server</li>
+<li>LiveScript</li>
+<li>Lua</li>
+<li>Makefile</li>
+<li>Markdown</li>
+<li>Mathematica</li>
+<li>Matlab</li>
+<li>Maxima</li>
+<li>Maya Embedded Language</li>
+<li>Mercury</li>
+<li>Mizar</li>
+<li>Mojolicious</li>
+<li>Monkey</li>
+<li>Moonscript</li>
+<li>NSIS</li>
+<li>Nginx</li>
+<li>Nimrod</li>
+<li>Nix</li>
+<li>Objective C</li>
+<li>OCaml</li>
+<li>OpenGL Shading Language</li>
+<li>OpenSCAD</li>
+<li>Oracle Rules Language</li>
+<li>Oxygene</li>
+<li>Parser3</li>
+<li>Perl</li>
+<li>PF</li>
+<li>PHP</li>
+<li>PowerShell</li>
+<li>Processing</li>
+<li>Prolog</li>
+<li>Protocol Buffers</li>
+<li>Pony</li>
+<li>Puppet</li>
+<li>PureBASIC</li>
+<li>Python</li>
+<li>Python profiler results</li>
+<li>Q</li>
+<li>QML</li>
+<li>R</li>
+<li>RenderMan RIB</li>
+<li>RenderMan RSL</li>
+<li>Roboconf</li>
+<li>Ruby</li>
+<li>Rust</li>
+<li>Scala</li>
+<li>Scheme</li>
+<li>Scilab</li>
+<li>SCSS</li>
+<li>Smali</li>
+<li>Smalltalk</li>
+<li>SQL</li>
+<li>Stan</li>
+<li>Stata</li>
+<li>STEP Part 21</li>
+<li>Stylus</li>
+<li>SubUnit</li>
+<li>Swift</li>
+<li>TAP (Test Anything Protocol)</li>
+<li>Tcl</li>
+<li>TeX</li>
+<li>Thrift</li>
+<li>TP</li>
+<li>Twig</li>
+<li>TypeScript</li>
+<li>Vala</li>
+<li>VB.Net</li>
+<li>VBScript</li>
+<li>Verilog</li>
+<li>VHDL</li>
+<li>Vim Script</li>
+<li>x86 Assembly</li>
+<li>XL</li>
+<li>XQuery</li>
+<li>Zephir</li>
+</ul>
+</div>
+<footer class="entry-footer">
+</footer>
+</article>
+</main>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info">
+<p>&copy; Andrew Sun 2010-2021</p>
+Proudly powered by <del>WordPress</del> Andrew Sun's Magical Fluffy Bunnies. This page was generated with 100% renewable energy.
+</div>
+</footer>
+</div>
+<script>var _paq=_paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);_paq.push(['enableHeartBeatTimer']);(function(){var u="//utils.asun.co/snoopy/";_paq.push(['setTrackerUrl',u+'snoopy.php/a']);_paq.push(['setSiteId',1]);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'snoopy_v2.js';s.parentNode.insertBefore(g,s);})();</script>
+<noscript><p><img src="//utils.asun.co/snoopy/snoopy.php?idsite=1" style="border:0;" alt="" data-pagespeed-url-hash="3046600376"/></p></noscript>
+<script>!function(t,e){"use strict";function n(){if(!a){a=!0;for(var t=0;t<d.length;t++)d[t].fn.call(window,d[t].ctx);d=[]}}function o(){"complete"===document.readyState&&n()}t=t||"docReady",e=e||window;var d=[],a=!1,c=!1;e[t]=function(t,e){return a?void setTimeout(function(){t(e)},1):(d.push({fn:t,ctx:e}),void("complete"===document.readyState||!document.attachEvent&&"interactive"===document.readyState?setTimeout(n,1):c||(document.addEventListener?(document.addEventListener("DOMContentLoaded",n,!1),window.addEventListener("load",n,!1)):(document.attachEvent("onreadystatechange",o),window.attachEvent("onload",n)),c=!0)))}}("wpBruiserDocReady",window);(function(){var wpbrLoader=(function(){var g=document,b=g.createElement('script'),c=g.scripts[0];b.async=1;b.src='https://andrewsun.com/?gdbc-client=3.1.43-'+(new Date()).getTime();c.parentNode.insertBefore(b,c);});wpBruiserDocReady(wpbrLoader);window.onunload=function(){};window.addEventListener('pageshow',function(event){if(event.persisted){(typeof window.WPBruiserClient==='undefined')?wpbrLoader():window.WPBruiserClient.requestTokens();}},false);})();</script><script src='https://cdn.jsdelivr.net/wp/plugins/modern-footnotes/tags/1.4.1/modern-footnotes.min.js' integrity='sha384-Yt5mrzQhCJgftKH6ABn5zwwUWb8AbJCLfBgCmOmtYCqo1qPLmSCqJGzUq6GwU8WW' crossorigin='anonymous' id='modern_footnotes-js'></script>
+<script src='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill.min.js' integrity='sha384-LWXI0vFVs5802e/oQ2xmb3HGXVl2GGSHOmaTQnmifHguIujwVU5j5iiqmS+UZMSy' crossorigin='anonymous' id='wp-polyfill-js'></script>
+<script id='wp-polyfill-js-after'>('fetch'in window)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js"></scr'+'ipt>');(document.contains)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js"></scr'+'ipt>');(window.DOMRect)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js"></scr'+'ipt>');(window.URL&&window.URL.prototype&&window.URLSearchParams)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-url.min.js"></scr'+'ipt>');(window.FormData&&window.FormData.prototype.keys)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js"></scr'+'ipt>');(Element.prototype.matches&&Element.prototype.closest)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js"></scr'+'ipt>');('objectFit'in document.documentElement.style)||document.write('<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js"></scr'+'ipt>');</script>
+<script src='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/hooks.min.js' integrity='sha384-bPP8/FLsiZGH6FSMmLmYLGejT7gWrcC9e1BCePZA2Fx6Smyj2+hkMVBm2j11sih8' crossorigin='anonymous' id='wp-hooks-js'></script>
+<script src='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/i18n.min.js' integrity='sha384-o3RFxLNaOyYFl7eG12+nIfp+cyB3X774qmMQZtqx7ik0IJUGvZgwAvhyWOCilhfM' crossorigin='anonymous' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>wp.i18n.setLocaleData({'text direction\u0004ltr':['ltr']});</script>
+<script src='https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js' integrity='sha384-cDoY3x6UZAwTo6Hcrpt7XZFIDBRjzGKs+vBAx+TA2u19a+Z4MxCiFJ2kc+deGRdp' crossorigin='anonymous' id='lodash-js'></script>
+<script id='lodash-js-after'>window.lodash=_.noConflict();</script>
+<script src='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/url.min.js' integrity='sha384-GTS4yB6MJU3w0dtM9YeAxiuDeKLFv9y2RC84h5svJzWqrKbZSfkBsHebzMil/QmF' crossorigin='anonymous' id='wp-url-js'></script>
+<script id='wp-api-fetch-js-translations'>(function(domain,translations){var localeData=translations.locale_data[domain]||translations.locale_data.messages;localeData[""].domain=domain;wp.i18n.setLocaleData(localeData,domain);})("default",{"locale_data":{"messages":{"":{}}}});</script>
+<script src='https://cdn.jsdelivr.net/gh/wordpress/wordpress@5.7/wp-includes/js/dist/api-fetch.min.js' integrity='sha384-Pa6ftFDV9f4AZwVTCUuLaP2gP0XvhexPSXzMXjrU/FRzf1iaEx7eEbDIFkIf0MUt' crossorigin='anonymous' id='wp-api-fetch-js'></script>
+<script id='wp-api-fetch-js-after'>wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware("https://andrewsun.com/wp-json/"));wp.apiFetch.nonceMiddleware=wp.apiFetch.createNonceMiddleware("50b9e0c1a9");wp.apiFetch.use(wp.apiFetch.nonceMiddleware);wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);wp.apiFetch.nonceEndpoint="https://andrewsun.com/wp-admin/admin-ajax.php?action=rest-nonce";</script>
+<script id='contact-form-7-js-extra'>var wpcf7=[];</script>
+<script src='https://cdn.jsdelivr.net/wp/plugins/contact-form-7/tags/5.4/includes/js/index.js' integrity='sha384-v9mzp1Z1usqEQI2QPGP11PIwqnPcM+43G3SUw19jeBK+4Q1keVx0z0Ur5wVg87Mz' crossorigin='anonymous' id='contact-form-7-js'></script>
+<script id='twentyfifteen-skip-link-focus-fix-js'>(function(){var ua=navigator.userAgent.toLowerCase();if((ua.indexOf('webkit')>-1||ua.indexOf('opera')>-1||ua.indexOf('msie')>-1)&&document.getElementById&&window.addEventListener){window.addEventListener('hashchange',function(){var element=document.getElementById(location.hash.substring(1));if(element){if(!/^(?:a|select|input|button|textarea)$/i.test(element.nodeName)){element.tabIndex=-1;}element.focus();}},false);}})();</script>
+<script id='twentyfifteen-script-js-extra'>var screenReaderText={"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};</script>
+<script src='https://cdn.asun.co/andrewsun.com/wp-content/themes/asun2k15/js/functions.js,qver=20160202.pagespeed.jm.dAgJ2RHw7z.js' id='twentyfifteen-script-js'></script>
+<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' id='adsbygoogle-js'></script>
+<script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js"></script>
+<script src="https://cdn.asun.co/andrewsun.com/static/syntax-highlighter/bundle_v3.min.js.pagespeed.jm.Pull92VNXD.js"></script>
+<script src="https://cdn.asun.co/andrewsun.com/cdnTest.js.pagespeed.jm.1B2M2Y8Asg.js" async onerror='var a=new Date;a.setTime(a.getTime()+6048E5);document.cookie="nocdn=1; expires="+a.toGMTString()+"; path=/";document.location.reload(!0);'>//</script>
+</body>
+</html>
+<!--Cached using Nginx-Helper on 2021-03-12 09:13:19. It took 23 queries executed in 0.181 seconds.-->
